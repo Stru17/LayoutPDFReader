@@ -2,3 +2,4 @@ openai
 IPython
 llmsherpa
 llama-index
+evadb
