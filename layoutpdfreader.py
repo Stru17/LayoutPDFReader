@@ -31,7 +31,6 @@ for section in doc.sections():
 #         selected_section = section
 #         break
 
-
 # include_children returns one sublevel of children
 # recurse returns all the descendants
 HTML(section.to_html(include_children = True, recurse = True))
@@ -61,4 +60,3 @@ HTML(doc.tables()[11].to_html())
 context = doc.tables()[11].to_html()
 resp = OpenAI().complete(f"read this table and answer question: what are the systems in the table for SECTION I. SYSTEMS YOU WILL BE USING AND WHY:\n{context}")
 print(resp.text)
-
